@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwordUnderHeart.CSharp", "SwordUnderHeart.CSharp.csproj", "{456CE76C-4367-ADED-0E48-0BE0E4BF7E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwordUnderHeart.CSharp.Editor", "SwordUnderHeart.CSharp.Editor.csproj", "{B721F074-16DC-48EE-D08D-C766A8D5605F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{456CE76C-4367-ADED-0E48-0BE0E4BF7E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456CE76C-4367-ADED-0E48-0BE0E4BF7E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456CE76C-4367-ADED-0E48-0BE0E4BF7E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456CE76C-4367-ADED-0E48-0BE0E4BF7E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B721F074-16DC-48EE-D08D-C766A8D5605F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B721F074-16DC-48EE-D08D-C766A8D5605F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B721F074-16DC-48EE-D08D-C766A8D5605F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B721F074-16DC-48EE-D08D-C766A8D5605F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
