@@ -1,0 +1,69 @@
+
+crow.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: true
+  xy: 72, 173
+  size: 37, 56
+  orig: 37, 56
+  offset: 0, 0
+  index: -1
+eye
+  rotate: true
+  xy: 130, 174
+  size: 36, 39
+  orig: 36, 39
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 158, 212
+  size: 42, 60
+  orig: 42, 60
+  offset: 0, 0
+  index: -1
+l_wing01
+  rotate: false
+  xy: 2, 178
+  size: 68, 76
+  orig: 68, 76
+  offset: 0, 0
+  index: -1
+l_wing02
+  rotate: false
+  xy: 2, 83
+  size: 46, 93
+  orig: 46, 93
+  offset: 0, 0
+  index: -1
+leg
+  rotate: true
+  xy: 2, 4
+  size: 18, 30
+  orig: 18, 30
+  offset: 0, 0
+  index: -1
+r_wing01
+  rotate: false
+  xy: 2, 24
+  size: 57, 57
+  orig: 57, 57
+  offset: 0, 0
+  index: -1
+r_wing02
+  rotate: true
+  xy: 72, 212
+  size: 42, 84
+  orig: 42, 84
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 220, 233
+  size: 34, 21
+  orig: 34, 21
+  offset: 0, 0
+  index: -1

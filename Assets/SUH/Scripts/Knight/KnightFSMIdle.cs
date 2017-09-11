@@ -19,6 +19,7 @@ public class KnightFSMIdle : FSM_State<Knight> {
 
     public override void EnterState(Knight owner)
     {
+        owner.m_state = KnightState.IDLE;
         owner.m_skeletonAni.state.ClearTrack(0);
         owner.m_skeletonAni.state.SetAnimation(0, "Idle", true);
         //owner.m_skeletonAni.state.End += State_End;

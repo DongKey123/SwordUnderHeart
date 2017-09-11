@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SUH/Scenes/InGame_0.unity
+- path: Assets/SUH/Scenes/Title.unity
   isLoaded: 1
   isActive: 1

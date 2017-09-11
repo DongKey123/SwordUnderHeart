@@ -3,7 +3,6 @@ using System.Collections;
 
 public class KnightFSMMove : FSM_State<Knight>
 {
-
     static readonly KnightFSMMove instance = new KnightFSMMove();
 
     public static KnightFSMMove Instance
@@ -20,6 +19,7 @@ public class KnightFSMMove : FSM_State<Knight>
 
     public override void EnterState(Knight owner)
     {
+        owner.m_state = KnightState.MOVE;
         owner.m_skeletonAni.state.SetAnimation(0, "Move", true);
         owner.m_JumpCount = 2;
     }

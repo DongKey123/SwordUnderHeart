@@ -19,6 +19,9 @@ public class UI_Jump : MonoBehaviour  , IPointerClickHandler{
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (!m_knight.m_Interactive)
+            return;
+
         if(m_knight.m_JumpCount == 2)
         {
             m_knight.ChangeState(KnightFSMJump.Instance);

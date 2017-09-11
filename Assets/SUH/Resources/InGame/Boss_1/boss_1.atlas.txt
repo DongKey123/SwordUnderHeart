@@ -1,0 +1,132 @@
+
+boss_1.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+angry
+  rotate: true
+  xy: 290, 481
+  size: 92, 85
+  orig: 92, 85
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 409, 856
+  size: 194, 166
+  orig: 194, 166
+  offset: 0, 0
+  index: -1
+body2
+  rotate: false
+  xy: 209, 848
+  size: 198, 174
+  orig: 198, 174
+  offset: 0, 0
+  index: -1
+bowl
+  rotate: false
+  xy: 2, 757
+  size: 205, 265
+  orig: 205, 265
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 794, 892
+  size: 130, 161
+  orig: 130, 161
+  offset: 0, 0
+  index: -1
+head2
+  rotate: false
+  xy: 259, 575
+  size: 121, 152
+  orig: 121, 152
+  offset: 0, 0
+  index: -1
+l_foot
+  rotate: false
+  xy: 245, 403
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+l_low_arm
+  rotate: true
+  xy: 605, 889
+  size: 133, 187
+  orig: 133, 187
+  offset: 0, 0
+  index: -1
+l_up_arm
+  rotate: false
+  xy: 2, 503
+  size: 135, 252
+  orig: 135, 252
+  offset: 0, 0
+  index: -1
+l_up_leg
+  rotate: true
+  xy: 139, 471
+  size: 96, 149
+  orig: 96, 149
+  offset: 0, 0
+  index: -1
+r_foot
+  rotate: true
+  xy: 957, 953
+  size: 69, 65
+  orig: 69, 65
+  offset: 0, 0
+  index: -1
+r_low_arm
+  rotate: false
+  xy: 2, 106
+  size: 117, 161
+  orig: 117, 161
+  offset: 0, 0
+  index: -1
+r_up_arm
+  rotate: false
+  xy: 2, 269
+  size: 127, 232
+  orig: 127, 232
+  offset: 0, 0
+  index: -1
+r_up_leg
+  rotate: false
+  xy: 2, 2
+  size: 97, 102
+  orig: 97, 102
+  offset: 0, 0
+  index: -1
+rock
+  rotate: false
+  xy: 131, 364
+  size: 112, 105
+  orig: 112, 105
+  offset: 0, 0
+  index: -1
+sad
+  rotate: false
+  xy: 131, 275
+  size: 91, 87
+  orig: 91, 87
+  offset: 0, 0
+  index: -1
+string01
+  rotate: true
+  xy: 209, 729
+  size: 117, 158
+  orig: 117, 158
+  offset: 0, 0
+  index: -1
+string02
+  rotate: false
+  xy: 139, 569
+  size: 118, 158
+  orig: 118, 158
+  offset: 0, 0
+  index: -1

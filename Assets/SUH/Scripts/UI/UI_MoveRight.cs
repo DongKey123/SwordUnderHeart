@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class UI_MoveRight : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
 
-    public Knight knight;
+    public Knight m_knight;
 
     // Use this for initialization
     void Start () {
@@ -20,12 +20,18 @@ public class UI_MoveRight : MonoBehaviour, IPointerUpHandler, IPointerDownHandle
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        knight.m_LBtnDown = false;
-        knight.m_RBtnDown = true;
+        if (!m_knight.m_Interactive)
+        {
+            m_knight.m_LBtnDown = false;
+            return;
+        }
+
+        m_knight.m_LBtnDown = false;
+        m_knight.m_RBtnDown = true;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        knight.m_RBtnDown = false;
+        m_knight.m_RBtnDown = false;
     }
 }

@@ -23,9 +23,9 @@ public class KnightFSMDrop : FSM_State<Knight>
 
     public override void EnterState(Knight owner)
     {
+        owner.m_state = KnightState.DROP;
         //owner.GetComponent<Rigidbody2D>().AddForce(Vector2.up * owner.m_jumpPower);
         owner.m_skeletonAni.state.SetAnimation(0, "Drop", false);
-        owner.m_JumpCount = 1;
         Ck = true;
     }
 
@@ -57,7 +57,6 @@ public class KnightFSMDrop : FSM_State<Knight>
 
         if (owner.m_IsGround || owner.GetComponent<Rigidbody2D>().velocity == Vector2.zero)
         {
-            Debug.Log("Idle");
             owner.ChangeState(KnightFSMIdle.Instance);
         }
     }

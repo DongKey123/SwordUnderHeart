@@ -19,11 +19,20 @@ public class KnightFSMAttack : FSM_State<Knight> {
     private KnightFSMAttack() { }
 
     int attacknum = 1;
+    bool atkCk = false;
+    bool enemyEfCk = false;
 
     public override void EnterState(Knight owner)
     {
-        attacknum = Random.Range(1, 5);
+        Debug.Log("Attack");
+        owner.m_state = KnightState.ATTACK;
+        attacknum = Random.Range(1, 3);
+        
         owner.m_skeletonAni.state.SetAnimation(0, "Atk" + attacknum, false);
+        atkCk = true;
+        enemyEfCk = true;
+        owner.m_AtkSound.PlayOneShot(owner.m_AtkSound.clip);
+        //owner.m_AtkEffect.GetComponent<Animator>().Play("AtkEffect");
     }
 
 
@@ -33,8 +42,19 @@ public class KnightFSMAttack : FSM_State<Knight> {
         {
             if (owner.m_skeletonAni.state.GetCurrent(0).time > 0.35f)
             {
-                if(owner.m_curAttackEnemy != null)
+                if(atkCk)
                 {
+                    atkCk = false;
+                    owner.m_AtkEffect[attacknum - 1].GetComponent<Animator>().Play("AtkEffect");
+                }
+                if (owner.m_curAttackEnemy != null)
+                {
+                    if(enemyEfCk)
+                    {
+                        enemyEfCk = false;
+                        GameObject effect = GameObject.Instantiate(owner.m_AttackEnemyEffect, owner.m_AttackEnemyEffectTR.position, Quaternion.identity);
+                        GameObject.Destroy(effect, 1f);
+                    }
                     owner.m_curAttackEnemy.Hit();
                 }
             }
@@ -67,15 +87,21 @@ public class KnightFSMAttack : FSM_State<Knight> {
             {
                 if (owner.m_skeletonAni.state.GetCurrent(0).time > 0.99f)
                 {
-                    attacknum = Random.Range(1, 5);
+                    attacknum = Random.Range(1, 3);
                     owner.m_skeletonAni.state.SetAnimation(0, "Atk" + attacknum, false);
+                    atkCk = true;
+                    enemyEfCk = true;
+                    owner.m_AtkSound.PlayOneShot(owner.m_AtkSound.clip);
                     return;
                 }
             }
             else
             {
-                attacknum = Random.Range(1, 5);
+                attacknum = Random.Range(1, 3);
                 owner.m_skeletonAni.state.SetAnimation(0, "Atk" + attacknum, false);
+                atkCk = true;
+                enemyEfCk = true;
+                owner.m_AtkSound.PlayOneShot(owner.m_AtkSound.clip);
                 return;
             }
             

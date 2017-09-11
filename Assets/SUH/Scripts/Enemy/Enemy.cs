@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour {
     public float m_knockBackSpeed = 1.0f;
     public float m_hitDelay = 1.2f;
     public bool m_IsObserve = false;
+    public bool m_AttackOn = false;
 
     public bool m_LookLeft = true;
     public bool m_HitOn = true;

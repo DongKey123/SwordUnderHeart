@@ -25,6 +25,15 @@ public class AttackCollider : MonoBehaviour {
         }
     }
 
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.tag == "Enemy")
+        {
+            _knight.m_ExistEnemyInRange = true;
+            _knight.m_curAttackEnemy = col.GetComponent<Enemy>();
+        }
+    }
+
     void OnTriggerExit2D(Collider2D col)
     {
         if (col.tag == "Enemy")

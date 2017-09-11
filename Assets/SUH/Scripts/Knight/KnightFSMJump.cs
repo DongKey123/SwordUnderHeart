@@ -21,6 +21,7 @@ public class KnightFSMJump : FSM_State<Knight>
 
     public override void EnterState(Knight owner)
     {
+        owner.m_state = KnightState.JUMP;
         owner.GetComponent<Rigidbody2D>().AddForce(Vector2.up * owner.m_jumpPower,ForceMode2D.Impulse);
         owner.m_skeletonAni.state.SetAnimation(0, "Jump_up", false);
         owner.m_JumpCount = 1;
@@ -28,6 +29,12 @@ public class KnightFSMJump : FSM_State<Knight>
 
     public override void UpdateState(Knight owner)
     {
+        if(owner.m_ExistEnemyInRange)
+        {
+            owner.ChangeState(KnightFSMJumpAttack.Instance);
+            return;
+        }
+
         if (owner.m_LBtnDown)
         {
             owner.transform.position += new Vector3(-1, 0, 0) * Time.deltaTime * owner.m_moveSpeed * 0.9f;
